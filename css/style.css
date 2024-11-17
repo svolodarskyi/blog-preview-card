@@ -1,0 +1,135 @@
+@import url("reset.css");
+@import url("common.css");
+
+.blog-card{
+    border: 1px solid #111;
+    border-radius: 20px;
+    padding: 24px;
+    width: 327px;
+    height: 501px;
+
+    box-shadow: 8px 8px 0 0 #000;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.blog-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.img-container{
+    width: 100%;
+    height: 200px;
+    background-image: url(../assets/images/illustration-article.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 4%;
+    
+}
+
+.tag{
+    border-radius: 4px;
+        padding: 4px 12px;
+        width: 73px;
+        height: 26px;
+        background: #f4d04e;
+
+        font-family: "Figtree", sans-serif;
+            font-weight: 800;
+            font-size: 12px;
+        
+            /* line-height: 18px; */
+            line-height: 1.5;
+            color: #111;
+}
+
+.posting-date{
+    font-family: "Figtree", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+    
+        /* line-height: 18px; */
+        line-height: 1.5;
+        color: #111;
+}
+
+.title{
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    
+    line-height: 1.5;
+    color: #111;
+    transition: color var(--transition);
+    cursor: pointer;
+    
+}
+
+.title:hover,
+.title:focus,
+.title:active{
+    color: var(--color-yellow);
+}
+
+.description{
+    font-family: "Figtree", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+    
+        /* line-height: 21px; */
+        line-height: 1.5;
+        color: #6b6b6b;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-name{
+    font-family: "Figtree", sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+    
+        /* line-height: 21px; */
+        line-height: 1.5;
+        color: #111;
+}
+
+@media (min-width: 1440px){
+    .container{
+        width: 1440px;
+    }
+
+        .blog-card {
+            width: 384px;
+            height: 522px;
+        }
+
+
+        .tag {
+            width: 82px;
+            height: 29px;
+            font-size: 14px;
+        }
+
+        .posting-date{
+            font-size: 14px;
+        }
+        
+        .title{
+            font-size: 24px;
+        }
+
+        .description{
+            font-size: 16px;
+        }
+}
